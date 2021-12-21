@@ -1,0 +1,18 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sim_1/new/game_tb.v,1639726926,verilog,,,,game_tb,,,../../../../Game.srcs/sources_1/ip/VGA_PLL,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL.v,1639704078,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/Game.v,,VGA_PLL,,,../../../../Game.srcs/sources_1/ip/VGA_PLL,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL_clk_wiz.v,1639704077,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL.v,,VGA_PLL_clk_wiz,,,../../../../Game.srcs/sources_1/ip/VGA_PLL,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/Game.v,1640027398,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/ball.v,,Game,,,../../../../Game.srcs/sources_1/ip/VGA_PLL,,,,,
+,,,,E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.srcs/sources_1/new/clock_enable_60Hz.v,,ball,,,,,,,,
+,,,,E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/gamestateDetector.v,,collisionDetector,,,,,,,,
+,,,,E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.srcs/sources_1/new/nes_controller.v,,gamestateDetector,,,,,,,,
+,,,,E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/renderer.v,,paddle,,,,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/renderer.v,1639719521,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/soundHandler.v,,renderer,,,../../../../Game.srcs/sources_1/ip/VGA_PLL,,,,,
+,,,,E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/vga.v,,soundHandler,,,,,,,,
+,,,,E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/collisionDetector.v,,clock_enable_60Hz,,,,,,,,
+,,,,E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/paddle.v,,nes_controller,,,,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/vga.v,1639706417,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sim_1/new/game_tb.v,,vga,,,../../../../Game.srcs/sources_1/ip/VGA_PLL,,,,,

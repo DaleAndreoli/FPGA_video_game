@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Nov 20 00:41:05 2021
+# Process ID: 16760
+# Current directory: E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.runs/synth_1
+# Command line: vivado.exe -log nes_controller_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nes_controller_top.tcl
+# Log file: E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.runs/synth_1/nes_controller_top.vds
+# Journal file: E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source nes_controller_top.tcl -notrace

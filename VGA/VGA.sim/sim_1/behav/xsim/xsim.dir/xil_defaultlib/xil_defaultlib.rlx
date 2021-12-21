@@ -1,0 +1,13 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sim_1/new/vga_tb.v,1639720665,verilog,,,,vga_tb,,,../../../../VGA.srcs/sources_1/ip/clock_25MHz;../../../../VGA.srcs/sources_1/ip/vga_pll,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/ip/clock_25MHz/clock_25MHz.v,1637816131,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/vga.v,,clock_25MHz,,,../../../../VGA.srcs/sources_1/ip/clock_25MHz;../../../../VGA.srcs/sources_1/ip/vga_pll,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/ip/clock_25MHz/clock_25MHz_clk_wiz.v,1637816131,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/ip/clock_25MHz/clock_25MHz.v,,clock_25MHz_clk_wiz,,,../../../../VGA.srcs/sources_1/ip/clock_25MHz;../../../../VGA.srcs/sources_1/ip/vga_pll,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/ip/vga_pll/vga_pll.v,1637375241,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/vga.v,,vga_pll,,,../../../../VGA.srcs/sources_1/ip/clock_25MHz;../../../../VGA.srcs/sources_1/ip/vga_pll,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/ip/vga_pll/vga_pll_clk_wiz.v,1637375241,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/ip/vga_pll/vga_pll.v,,vga_pll_clk_wiz,,,../../../../VGA.srcs/sources_1/ip/clock_25MHz;../../../../VGA.srcs/sources_1/ip/vga_pll,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/clk_div.v,1637817879,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/vga.v,,clk_div,,,../../../../VGA.srcs/sources_1/ip/clock_25MHz;../../../../VGA.srcs/sources_1/ip/vga_pll,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/vga.v,1640039639,verilog,,E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sim_1/new/vga_tb.v,,vga,,,../../../../VGA.srcs/sources_1/ip/clock_25MHz;../../../../VGA.srcs/sources_1/ip/vga_pll,,,,,
+E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/vga_top.v,1637375633,verilog,,,,vga_top,,,../../../../VGA.srcs/sources_1/ip/clock_25MHz;../../../../VGA.srcs/sources_1/ip/vga_pll,,,,,

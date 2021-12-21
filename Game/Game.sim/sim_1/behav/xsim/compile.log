@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_PLL_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_PLL
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/Game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Game
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/ball.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ball
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.srcs/sources_1/new/clock_enable_60Hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_enable_60Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/collisionDetector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module collisionDetector
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/gamestateDetector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gamestateDetector
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.srcs/sources_1/new/nes_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nes_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/paddle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module paddle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/renderer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module renderer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/soundHandler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soundHandler
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sim_1/new/game_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_tb

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Dec 16 18:21:20 2021
+# Process ID: 2384
+# Current directory: E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.runs/VGA_PLL_synth_1
+# Command line: vivado.exe -log VGA_PLL.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_PLL.tcl
+# Log file: E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.runs/VGA_PLL_synth_1/VGA_PLL.vds
+# Journal file: E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.runs/VGA_PLL_synth_1\vivado.jou
+#-----------------------------------------------------------
+source VGA_PLL.tcl -notrace

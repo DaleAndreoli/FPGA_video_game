@@ -1,0 +1,600 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec 20 20:40:44 2021
+# Process ID: 16380
+# Current directory: E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.runs/synth_1
+# Command line: vivado.exe -log Game.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Game.tcl
+# Log file: E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.runs/synth_1/Game.vds
+# Journal file: E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Game.tcl -notrace
+Command: synth_design -top Game -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13096 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 845.656 ; gain = 234.637
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Game' [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/Game.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gamestateDetector' [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/gamestateDetector.v:3]
+	Parameter stillPlaying bound to: 2'b00 
+	Parameter gameLost bound to: 2'b01 
+	Parameter gameWon bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'gamestateDetector' (1#1) [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/gamestateDetector.v:3]
+INFO: [Synth 8-6157] synthesizing module 'soundHandler' [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/soundHandler.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'soundHandler' (2#1) [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/soundHandler.v:3]
+WARNING: [Synth 8-7023] instance 'Sound' of module 'soundHandler' has 11 connections declared, but only 10 given [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/Game.v:37]
+INFO: [Synth 8-6157] synthesizing module 'collisionDetector' [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/collisionDetector.v:3]
+	Parameter ballHeight bound to: 15'b000000000101000 
+	Parameter ballWidth bound to: 15'b000000000101000 
+	Parameter paddleY bound to: 15'b000001111111100 
+	Parameter paddleWidth bound to: 15'b000000100101100 
+	Parameter screenMaxX bound to: 15'b000011110000000 
+	Parameter screenMaxY bound to: 15'b000010000111000 
+	Parameter brickX bound to: 15'b000000010101111 
+	Parameter brickY bound to: 15'b000000011001000 
+	Parameter brickWidth bound to: 15'b000000001100100 
+	Parameter brickHeight bound to: 15'b000000000110010 
+	Parameter brickVertSpace bound to: 15'b000000001011010 
+	Parameter brickHorzSpace bound to: 15'b000000011010010 
+	Parameter dead bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'collisionDetector' (3#1) [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/collisionDetector.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ball' [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/ball.v:3]
+	Parameter width bound to: 15'b000000000101000 
+	Parameter height bound to: 15'b000000000101000 
+	Parameter screenMaxX bound to: 15'b000011110000000 
+	Parameter screenMaxY bound to: 15'b000010000111000 
+	Parameter maxVelY bound to: 15'b000000000010100 
+	Parameter left bound to: 1'b0 
+	Parameter right bound to: 1'b1 
+	Parameter up bound to: 1'b0 
+	Parameter down bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'ball' (4#1) [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/ball.v:3]
+WARNING: [Synth 8-689] width (8) of port connection 'velX' does not match port width (16) of module 'ball' [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/Game.v:84]
+WARNING: [Synth 8-689] width (8) of port connection 'velY' does not match port width (16) of module 'ball' [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/Game.v:85]
+INFO: [Synth 8-6157] synthesizing module 'renderer' [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/renderer.v:3]
+	Parameter black bound to: 3'b000 
+	Parameter blue bound to: 3'b001 
+	Parameter green bound to: 3'b010 
+	Parameter cyan bound to: 3'b011 
+	Parameter red bound to: 3'b100 
+	Parameter magenta bound to: 3'b101 
+	Parameter yellow bound to: 3'b110 
+	Parameter grey bound to: 3'b111 
+	Parameter paddleY bound to: 15'b000001111111100 
+	Parameter paddleHeight bound to: 15'b000000000011110 
+	Parameter paddleWidth bound to: 15'b000000100101100 
+	Parameter ballHeight bound to: 15'b000000000101000 
+	Parameter ballWidth bound to: 15'b000000000101000 
+	Parameter brickX bound to: 15'b000000010101111 
+	Parameter brickY bound to: 15'b000000011001000 
+	Parameter brickWidth bound to: 15'b000000001100100 
+	Parameter brickHeight bound to: 15'b000000000110010 
+	Parameter brickVertSpace bound to: 15'b000000001011010 
+	Parameter brickHorzSpace bound to: 15'b000000011010010 
+	Parameter stillPlaying bound to: 2'b00 
+	Parameter gameLost bound to: 2'b01 
+	Parameter gameWon bound to: 2'b10 
+WARNING: [Synth 8-6014] Unused sequential element paddlePixel_reg was removed.  [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/renderer.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'renderer' (5#1) [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/renderer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'paddle' [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/paddle.v:3]
+	Parameter width bound to: 16'b0000000100101100 
+	Parameter height bound to: 8'b00011110 
+	Parameter screenWidth bound to: 16'b0000011110000000 
+	Parameter screenHeight bound to: 16'b0000010000111000 
+	Parameter btnLeft bound to: 8'b00000110 
+	Parameter btnRight bound to: 8'b00000111 
+	Parameter y bound to: 16'b0000001111111100 
+	Parameter thrust bound to: 8'b00010100 
+INFO: [Synth 8-6155] done synthesizing module 'paddle' (6#1) [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/paddle.v:3]
+INFO: [Synth 8-6157] synthesizing module 'nes_controller' [E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.srcs/sources_1/new/nes_controller.v:3]
+	Parameter btnA bound to: 8'b00000000 
+	Parameter btnB bound to: 8'b00000001 
+	Parameter btnSel bound to: 8'b00000010 
+	Parameter btnStart bound to: 8'b00000011 
+	Parameter btnUp bound to: 8'b00000100 
+	Parameter btnDown bound to: 8'b00000101 
+	Parameter btnLeft bound to: 8'b00000110 
+	Parameter btnRight bound to: 8'b00000111 
+	Parameter idle bound to: 0 - type: integer 
+	Parameter setLatch bound to: 1 - type: integer 
+	Parameter readBtn bound to: 2 - type: integer 
+	Parameter clockIn12us bound to: 1200 - type: integer 
+	Parameter clockIn6us bound to: 600 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock_enable_60Hz' [E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.srcs/sources_1/new/clock_enable_60Hz.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clock_enable_60Hz' (7#1) [E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.srcs/sources_1/new/clock_enable_60Hz.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'nes_controller' (8#1) [E:/Documents/School/ECEN 397/FGPA_video_game/NES_controller/NES_controller.srcs/sources_1/new/nes_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga' [E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/vga.v:3]
+	Parameter hActivePixels bound to: 16'b0000011110000000 
+	Parameter hFrontPorch bound to: 8'b01011000 
+	Parameter hBackPorch bound to: 8'b10010100 
+	Parameter hSyncWidth bound to: 8'b00101100 
+	Parameter hTotalPixels bound to: 16'b0000100010011000 
+	Parameter vActiveLines bound to: 16'b0000010000111000 
+	Parameter vFrontPorch bound to: 8'b00000100 
+	Parameter vBackPorch bound to: 8'b00100100 
+	Parameter vSyncWidth bound to: 8'b00000101 
+	Parameter vTotalLines bound to: 16'b0000010001100101 
+INFO: [Synth 8-6155] done synthesizing module 'vga' (9#1) [E:/Documents/School/ECEN 397/FGPA_video_game/VGA/VGA.srcs/sources_1/new/vga.v:3]
+INFO: [Synth 8-6157] synthesizing module 'VGA_PLL' [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.runs/synth_1/.Xil/Vivado-16380-Dales-Desktop/realtime/VGA_PLL_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_PLL' (10#1) [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.runs/synth_1/.Xil/Vivado-16380-Dales-Desktop/realtime/VGA_PLL_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Game' (11#1) [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/new/Game.v:3]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[5]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[4]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[3]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[2]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[1]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[0]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[15]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[14]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[13]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[12]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[11]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[10]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[9]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[8]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[7]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[6]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[5]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[4]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[3]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[2]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[1]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[0]
+WARNING: [Synth 8-3331] design soundHandler has unconnected port colBallLeft
+WARNING: [Synth 8-3331] design soundHandler has unconnected port colBallRight
+WARNING: [Synth 8-3331] design soundHandler has unconnected port colBallTop
+WARNING: [Synth 8-3331] design soundHandler has unconnected port colBallBot
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 919.055 ; gain = 308.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 919.055 ; gain = 308.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 919.055 ; gain = 308.035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 919.055 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL/VGA_PLL_in_context.xdc] for cell 'vga_pll'
+Finished Parsing XDC File [e:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL/VGA_PLL_in_context.xdc] for cell 'vga_pll'
+Parsing XDC File [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Basys3_Master.xdc]
+Finished Parsing XDC File [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Documents/School/ECEN 397/FGPA_video_game/Game/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1030.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1030.988 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1030.988 ; gain = 419.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1030.988 ; gain = 419.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {e:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL/VGA_PLL_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {e:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL/VGA_PLL_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for vga_pll. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1030.988 ; gain = 419.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'commState_reg' in module 'nes_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                         00000000
+*
+                setLatch |                               01 |                         00000001
+                 readBtn |                               10 |                         00000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'commState_reg' using encoding 'sequential' in module 'nes_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1030.988 ; gain = 419.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 4     
+	   2 Input     16 Bit       Adders := 13    
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 9     
+	   4 Input     16 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   6 Input     11 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	  26 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  31 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 25    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module gamestateDetector 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module soundHandler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module collisionDetector 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 4     
+	   2 Input     16 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  31 Input      1 Bit        Muxes := 1     
+Module ball 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 7     
+	   4 Input     16 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 2     
+	   5 Input     11 Bit        Muxes := 1     
+	   6 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 1     
+Module renderer 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 3     
++---Registers : 
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	  26 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 3     
+Module paddle 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_enable_60Hz 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module nes_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 7     
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[5]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[4]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[3]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[2]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[1]
+WARNING: [Synth 8-3331] design paddle has unconnected port buttons[0]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[15]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[14]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[13]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[12]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[11]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[10]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[9]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[8]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[7]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[6]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[5]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[4]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[3]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[2]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[1]
+WARNING: [Synth 8-3331] design collisionDetector has unconnected port ballVelX[0]
+WARNING: [Synth 8-3331] design soundHandler has unconnected port colBallLeft
+WARNING: [Synth 8-3331] design soundHandler has unconnected port colBallRight
+WARNING: [Synth 8-3331] design soundHandler has unconnected port colBallTop
+WARNING: [Synth 8-3331] design soundHandler has unconnected port colBallBot
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Renderer/brickPixel_reg[1] )
+INFO: [Synth 8-3886] merging instance 'Renderer/brickPixel_reg[2]' (FDSE) to 'Renderer/brickPixel_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[3]' (FDRE) to 'Ball/velX_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[4]' (FDRE) to 'Ball/velX_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[5]' (FDRE) to 'Ball/velX_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[6]' (FDRE) to 'Ball/velX_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[7]' (FDRE) to 'Ball/velX_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[8]' (FDRE) to 'Ball/velX_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[9]' (FDRE) to 'Ball/velX_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[10]' (FDRE) to 'Ball/velX_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[11]' (FDRE) to 'Ball/velX_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[12]' (FDRE) to 'Ball/velX_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[13]' (FDRE) to 'Ball/velX_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Ball/velX_reg[14]' (FDRE) to 'Ball/velX_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Ball/velX_reg[15] )
+INFO: [Synth 8-3886] merging instance 'Ball/velY_reg[8]' (FDE) to 'Ball/velY_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Ball/velY_reg[9]' (FDE) to 'Ball/velY_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Ball/velY_reg[10]' (FDE) to 'Ball/velY_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Ball/velY_reg[11]' (FDE) to 'Ball/velY_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Ball/velY_reg[12]' (FDE) to 'Ball/velY_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Ball/velY_reg[13]' (FDE) to 'Ball/velY_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Ball/velY_reg[14]' (FDE) to 'Ball/velY_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Ball/velY_reg[15]' (FDE) to 'Ball/velY_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Ball/velY_reg[5]' (FDE) to 'Ball/velY_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Ball/velY_reg[6]' (FDE) to 'Ball/velY_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Ball/velY_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Renderer/finalPixel_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1030.988 ; gain = 419.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1030.988 ; gain = 419.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1058.023 ; gain = 447.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1059.133 ; gain = 448.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.934 ; gain = 449.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.934 ; gain = 449.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.934 ; gain = 449.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.934 ; gain = 449.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.934 ; gain = 449.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.934 ; gain = 449.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |VGA_PLL       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |VGA_PLL |     1|
+|2     |CARRY4  |   132|
+|3     |LUT1    |   132|
+|4     |LUT2    |   141|
+|5     |LUT3    |    93|
+|6     |LUT4    |   213|
+|7     |LUT5    |    78|
+|8     |LUT6    |   123|
+|9     |FDRE    |   242|
+|10    |FDSE    |    10|
+|11    |IBUF    |     1|
+|12    |OBUF    |     8|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------+------------------+------+
+|      |Instance     |Module            |Cells |
++------+-------------+------------------+------+
+|1     |top          |                  |  1174|
+|2     |  Ball       |ball              |   406|
+|3     |  Collisions |collisionDetector |   137|
+|4     |  Controller |nes_controller    |   148|
+|5     |    U1       |clock_enable_60Hz |    45|
+|6     |  Gamestate  |gamestateDetector |     3|
+|7     |  Paddle     |paddle            |   100|
+|8     |  Renderer   |renderer          |    56|
+|9     |  Sound      |soundHandler      |    44|
+|10    |  VGA        |vga               |   270|
++------+-------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.934 ; gain = 449.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.934 ; gain = 337.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.934 ; gain = 449.914
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1072.992 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1072.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1072.992 ; gain = 733.535
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1072.992 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Documents/School/ECEN 397/FGPA_video_game/Game/Game.runs/synth_1/Game.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Game_utilization_synth.rpt -pb Game_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 20 20:41:23 2021...

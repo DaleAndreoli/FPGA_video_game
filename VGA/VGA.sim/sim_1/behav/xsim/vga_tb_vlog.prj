@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../VGA.srcs/sources_1/ip/vga_pll" --include "../../../../VGA.srcs/sources_1/ip/clock_25MHz" \
+"../../../../VGA.srcs/sources_1/new/vga.v" \
+"../../../../VGA.srcs/sim_1/new/vga_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

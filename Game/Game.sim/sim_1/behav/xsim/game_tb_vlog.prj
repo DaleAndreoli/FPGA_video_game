@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Game.srcs/sources_1/ip/VGA_PLL" \
+"../../../../Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL_clk_wiz.v" \
+"../../../../Game.srcs/sources_1/ip/VGA_PLL/VGA_PLL.v" \
+"../../../../Game.srcs/sources_1/new/Game.v" \
+"../../../../Game.srcs/sources_1/new/ball.v" \
+"../../../../../NES_controller/NES_controller.srcs/sources_1/new/clock_enable_60Hz.v" \
+"../../../../Game.srcs/sources_1/new/collisionDetector.v" \
+"../../../../Game.srcs/sources_1/new/gamestateDetector.v" \
+"../../../../../NES_controller/NES_controller.srcs/sources_1/new/nes_controller.v" \
+"../../../../Game.srcs/sources_1/new/paddle.v" \
+"../../../../Game.srcs/sources_1/new/renderer.v" \
+"../../../../Game.srcs/sources_1/new/soundHandler.v" \
+"../../../../../VGA/VGA.srcs/sources_1/new/vga.v" \
+"../../../../Game.srcs/sim_1/new/game_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
