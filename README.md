@@ -3,6 +3,12 @@ Dale Andreoli
 and17081@byui.edu
 # FPGA Game Project
 
+[Video Demonstration](https://youtu.be/BgsAh8YejHQ)
+
+<img src="Report/Images/gameplay.png" alt="gameplay" height="400"/>
+<img src="Report/Images/final_photo.jpg" alt="gameplay" height="400"/>
+
+
 # Contents
 ## [Purpose](Report/Purpose.md)
 ## [Methods and Procedure](Report/Methods.md)
