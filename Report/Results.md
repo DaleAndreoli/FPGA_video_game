@@ -6,3 +6,5 @@ The following image shows the final register transfer level schematic of this pr
 
 A video demonstration of the game working in full can be seen here.
 
+[![Video_Link](Images/gameplay.png)](https://youtu.be/BgsAh8YejHQ "FPGA Game - Demonstration")
+
