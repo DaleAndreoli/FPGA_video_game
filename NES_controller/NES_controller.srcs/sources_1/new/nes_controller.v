@@ -1,5 +1,7 @@
 `timescale 1ns / 1ps
 
+// This module was based off a similar NES controller module used in a project by Andy West
+
 module nes_controller(
     input clk,
     input data,
@@ -32,8 +34,8 @@ localparam
 
 // Latch and pulse timings    
 localparam
-    clockIn12us = 100000000 / 1000000 * 12,
-    clockIn6us = clockIn12us / 8'd2;
+    clockIn1 = 100000000 / 1000000 * 12,
+    clockIn2 = clockIn1 / 8'd2;
     
 reg [7:0] commState = idle;
 reg [7:0] currentButton = btnA;
@@ -50,7 +52,7 @@ begin
     case(commState)
         setLatch:
             begin
-                if (count < clockIn12us)
+                if (count < clockIn1)
                     begin
                         latch <= 1;
                         count <= count + 1'b1;
@@ -58,22 +60,22 @@ begin
                 else
                     begin
                         latch <= 0;
-                        count <= clockIn6us[15:0];
+                        count <= clockIn2[15:0];
                         currentButton <= btnA;
                         commState <= readBtn;
                     end
             end
         readBtn:
             begin
-                if ( count < clockIn6us )
+                if ( count < clockIn2 )
                     pulse <= 1;
                 else
                     pulse <= 0;
                 
-                if ( count == clockIn6us )
+                if ( count == clockIn2 )
                     buttons[currentButton] <= ~data;
                     
-                if ( count < clockIn12us )
+                if ( count < clockIn1 )
                     count <= count + 1'b1;
                 else
                     if ( currentButton == btnRight )
