@@ -1,3 +1,5 @@
+[Back to Welcome Page](../README.md)
+
 # Results
 
 ## Collisions
@@ -13,3 +15,7 @@ if ( ballY + ballHeight > paddleY +ballVelY
 else
     colBallPadLeft <= 0;
 ```
+
+[Next Page](Results-Sound.md)
+
+[Back to Welcome Page](../README.md)

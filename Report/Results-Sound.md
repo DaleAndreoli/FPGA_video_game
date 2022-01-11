@@ -1,3 +1,9 @@
+[Back to Welcome Page](../README.md)
+
+# Results
+
+## Sound
+
 The sound module receives information from the collision handler, which allows it to determine when a signal should be sent to the buzzer to make a beep.
 
 ```v
@@ -8,3 +14,7 @@ begin
     durationFrames <= 12;
 end
 ```
+
+[Next Page](Results-Bricks.md)
+
+[Back to Welcome Page](../README.md)

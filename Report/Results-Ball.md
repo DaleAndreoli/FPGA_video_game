@@ -1,3 +1,5 @@
+[Back to Welcome Page](../README.md)
+
 # Results
 
 ## Ball
@@ -34,3 +36,7 @@ begin
     velX <= 15'd3;
 end
 ```
+
+[Next Page](Results-Collisions.md)
+
+[Back to Welcome Page](../README.md)

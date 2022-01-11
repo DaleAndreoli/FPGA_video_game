@@ -1,3 +1,5 @@
+[Back to Welcome Page](../README.md)
+
 # Results
 
 ## Bricks
@@ -32,3 +34,7 @@ for ( brick = 15'd0; brick < 15'd32;brick = brick + 1'b1 )
 ```
 
 I struggled to implement these loops that handle the bricks in their own module similar to the other game objects. I am sure it is possible, but for now they are handled entirely in the Renderer and Collision modules.
+
+[Next Page](Results-GameState.md)
+
+[Back to Welcome Page](../README.md)

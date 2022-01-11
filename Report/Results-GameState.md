@@ -1,3 +1,5 @@
+[Back to Welcome Page](../README.md)
+
 # Results
 
 ## Game State
@@ -10,3 +12,7 @@ if ( colBallBot & gameState == stillPlaying )
 else if ( aliveBricks == 32'd0 & gameState == stillPlaying )
     gameState <= gameWon;
 ```
+
+[Next Page](Conclusions.md)
+
+[Back to Welcome Page](../README.md)

@@ -1,4 +1,5 @@
 Dale Andreoli
+
 and17081@byui.edu
 # FPGA Game Project
 
@@ -15,5 +16,5 @@ and17081@byui.edu
 * [Sound](Report/Results-Sound.md)
 * [Bricks](Report/Results-Bricks.md)
 * [Game State](Report/Results-GameState.md)
-## [Conclusions](Conslusions.md)
-## [References](References.md)
+## [Conclusions](Report/Conclusions.md)
+## [References](Report/References.md)

@@ -1,3 +1,5 @@
+[Back to Welcome Page](../README.md)
+
 # Results
 
 ## Paddle
@@ -16,3 +18,7 @@ if ( frameSync )
             x <= x + thrust; 
     end
 ```
+
+[Next Page](Results-Ball.md)
+
+[Back to Welcome Page](../README.md)

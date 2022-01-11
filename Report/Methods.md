@@ -1,3 +1,4 @@
+[Back to Welcome Page](../README.md)
 # Methods and Procedure
 
 This project uses a Basys 3 Artix-7 FPGA to handle input, output and game logic. This FPGA has an on-board VGA output. The video was output to a computer monitor at 1080p resolution at 60Hz refresh rate. The audio was output from a buzzer that makes a beep when given a high signal from one of the Pmod headers on the FPGA. The game is controlled by a Nintendo Entertainment System controller which connects to several of the Pmod headers on the FPGA to send button input data. Game logic is handled by hardware designed in Verilog then programmed on to the FPGA.
@@ -25,3 +26,7 @@ The NES controller sends all of its button values through a single data pin, whi
 The remainder of the project was to bring each of the hardware components together and design the game. I looked to simple games of the past as I researched a viable game to design for this project. The game I settled on is a variant of Brick Break. The player controls a paddle that moves along the bottom edge of the screen. The player must move the paddle to hit a ball that bounces around the screen. An array of bricks is laid out. When the ball collides with a brick, the brick is destroyed and the ball bounces away. If the player misses the ball, the player loses and game is over. If all the bricks are destroyed, the player wins and the game is over.
 
 As planned, this phase of the project took by far the most time. Combining all the hardware modules while designing the game logic led to a lot of debugging and troubleshooting. Some features needed to be added to the VGA module to fit in with the rest of the project. Drawing shapes on the screen and handling collisions had a lot of room for error and debugging. Designing, developing and debugging the game was done over the course of several weeks and took around 70 hours. The test plan for the project as a whole is to program the FPGA and make sure the game plays as designed.
+
+[Next Page](Results.md)
+
+[Back to Welcome Page](../README.md)

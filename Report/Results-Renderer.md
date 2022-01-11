@@ -1,3 +1,5 @@
+[Back to Welcome Page](../README.md)
+
 # Results
 
 ## Renderer
@@ -27,3 +29,6 @@ else
     currentPixel <= finalPixel;
 ```
 
+[Next Page](Results-Controller.md)
+
+[Back to Welcome Page](../README.md)

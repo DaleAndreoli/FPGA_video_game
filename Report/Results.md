@@ -1,3 +1,5 @@
+[Back to Welcome Page](../README.md)
+
 # Results
 
 The following image shows the final register transfer level schematic of this project. This schematic neatly shows how each of the following modules are connected. 
@@ -18,5 +20,6 @@ The following Pin Out Diagram provided with the documentation for the FPGA was h
 
 ![Pin_Diagram](Images/Basys_Pmod_Pin-Out_Diagram.png)
 
+[Next Page](Results-VideoOutput.md)
 
-
+[Back to Welcome Page](../README.md)

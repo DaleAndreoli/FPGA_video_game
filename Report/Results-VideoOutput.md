@@ -1,3 +1,5 @@
+[Back to Welcome Page](../README.md)
+
 # Results
 
 ## Video Output
@@ -103,3 +105,7 @@ screenY <= vPos - vBackPorch;
 Creating a testbench was very helpful to getting the video output to work. The timing diagram made it easy to see the values of each signal and determine where things went wrong in the code.
 
 ![vga-tb](Images/vga-testbench.png)
+
+[Next Page](Results-Renderer.md)
+
+[Back to Welcome Page](../README.md)

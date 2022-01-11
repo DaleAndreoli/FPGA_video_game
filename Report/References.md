@@ -1,3 +1,5 @@
+[Back to Welcome Page](../README.md)
+
 # References
 
 Digilent, (2016). Basys 3™ FPGA Board Reference Manual. https://digilent.com/reference/_media/basys3:basys3_rm.pdf
@@ -9,3 +11,5 @@ Green, W., (2020). Video Timings: VGA, SVGA, 720p, 1080p. https://projectf.io/po
 Pinout guide, (2017). Nintendo NES and SNES joystick controller pinout. https://pinoutguide.com/Game/snescontroller_pinout.shtml
 
 Szymansky, R., (2018). NES / SNES USB Adapter. https://bertiusgames.com/projects/gamepad.html
+
+[Back to Welcome Page](../README.md)
