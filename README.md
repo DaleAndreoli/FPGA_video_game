@@ -5,8 +5,9 @@ and17081@byui.edu
 
 [Video Demonstration](https://youtu.be/BgsAh8YejHQ)
 
-<img src="Report/Images/gameplay.png" alt="gameplay" height="400"/>
-<img src="Report/Images/final_photo.jpg" alt="gameplay" height="400"/>
+<img src="Report/Images/gameplay.png" alt="gameplay" width="400"/>
+
+<img src="Report/Images/final_photo.jpg" alt="gameplay" width="400"/>
 
 
 # Contents
