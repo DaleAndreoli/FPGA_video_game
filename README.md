@@ -1,6 +1,7 @@
 Dale Andreoli
 
 and17081@byui.edu
+
 # FPGA Game Project
 
 [Video Demonstration](https://youtu.be/BgsAh8YejHQ)
