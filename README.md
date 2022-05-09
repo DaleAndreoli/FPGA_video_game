@@ -1,6 +1,6 @@
-Dale Andreoli
+Dale Andreoli - daleandreoli@yahoo.com
 
-and17081@byui.edu
+Solo Project
 
 # FPGA Game Project
 
